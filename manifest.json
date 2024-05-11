@@ -1,0 +1,15 @@
+{
+    "manifest_version": 3,
+    "name": "↓ 下载拦截",
+    "version": "1.0.0",
+    "description": "拦截下载链接",
+    "permissions": [
+        "downloads",
+        "webRequest",
+        "webRequestBlocking",
+        "tabs"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    }
+}
