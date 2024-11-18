@@ -22,8 +22,10 @@ A：关闭扩展，直接调用浏览器下载
 
 ## 未来计划
 
+- [x] Referer
+- [x] User-Agent
+- [ ] 解决 `Unchecked runtime.lastError: Download must be in progress`
 - [ ] Cookie
-- [ ] Referer
 
 ## 许可证
 

@@ -12,7 +12,13 @@ chrome.downloads.onDeterminingFilename.addListener((downloadItem) => {
         downloadItem.referrer = "";
     }
 
+    const content = `
+URL: ${downloadItem.url}\n
+Referrer: ${downloadItem.referrer}\n
+User-Agent: ${navigator.userAgent}
+`;
+
     chrome.tabs.create({
-        url: "data:text/plain," + encodeURIComponent(downloadItem.url)
+        url: "data:text/plain," + encodeURIComponent(content)
     });
 });
